@@ -1,6 +1,6 @@
 .contact {
   padding: 2rem;
-  background-color: #f1f1f1;
+  background-color: #2B2B2B;
   text-align: center;
 }
 
@@ -15,7 +15,7 @@
 .contact textarea {
   margin-bottom: 1rem;
   padding: 0.8rem;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1px solid #ccc;
 }
 

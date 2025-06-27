@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './css/utilities.css';
 
-const sectionIds = ['home', 'about', 'projects', 'experience', 'blog', 'contact'];
+const sectionIds = ['home', 'about', 'projects', 'experience', 'contact'];
 const sectionNames = {
   home: 'welcome',
   about: 'about me',
   projects: 'projects',
   experience: 'experiences',
-  blog: 'blog',
   contact: 'contact me',
 };
 
