@@ -3,21 +3,21 @@ import '../css/pages/projects/projects.css';
 
 const projects = [
   {
-    title: 'Evcil Hayvan Takip Uygulaması',
-    description: 'Evcil hayvanınızın konumunu ve sağlık durumunu takip edebileceğiniz bir mobil uygulama.',
+    title: 'mobile app1',
+    description: 'summary',
     link: '#'
   },
   {
-    title: 'Kişisel Portföy Web Sitesi',
-    description: 'React, GitHub Pages ve modern CSS ile geliştirilmiş portföy sitesi.',
+    title: 'mobile app2',
+    description: 'summary',
     link: '#'
-  }
+  },
 ];
 
 const Projects = () => {
   return (
     <section className="projects">
-      <h2>Projelerim</h2>
+      <h2>projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>

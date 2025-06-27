@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <section className="home">
       <div className="home__content">
-        {/* <h1>Merhaba, ben Sedef Sert</h1>
-        <p>Yazılım geliştirici, sistem geliştirici ve yapay zekâ tutkunu.</p> */}
+        <h1>welcome my world</h1>
+        <p>it's just me.</p>
       </div>
     </section>
   );

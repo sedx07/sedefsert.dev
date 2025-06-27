@@ -3,23 +3,23 @@ import '../css/pages/experience/experience.css';
 
 const experiences = [
   {
-    role: "Sistem Geliştirme Uzmanı",
-    company: "Vestel",
-    period: "2023 - Günümüz",
-    description: "SAP geliştirmeleri, süreç dijitalleştirme, otomasyon çözümleri ve yazılım entegrasyonları üzerine çalıştım."
+    role: "role1",
+    company: "company1",
+    period: "2023 - tuday",
+    description: "summary"
   },
   {
-    role: "Stajyer Yazılım Geliştirici",
-    company: "ABC Teknoloji",
-    period: "2022 Yaz",
-    description: "React ve Python projelerine destek oldum. Basit frontend komponentler geliştirdim."
-  }
+    role: "role2",
+    company: "company2",
+    period: "2021 - 2023",
+    description: "summary"
+  },
 ];
 
 const Experience = () => {
   return (
     <section className="experience">
-      <h2>Deneyimlerim</h2>
+      <h2>experiences</h2>
       <div className="experience-list">
         {experiences.map((exp, index) => (
           <div className="experience-item" key={index}>

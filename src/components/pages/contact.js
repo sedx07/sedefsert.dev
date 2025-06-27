@@ -11,23 +11,24 @@ const Contact = () => {
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
       .then(
         (result) => {
-          alert('Mesaj başarıyla gönderildi!');
+          alert('succeses!');
           form.current.reset();
         },
         (error) => {
-          alert('Gönderimde hata oluştu!');
+          alert('fail!');
         }
       );
   };
 
   return (
     <section className="contact">
-      <h2>İletişim</h2>
+      <h2>contact me</h2>
       <form ref={form} onSubmit={sendEmail}>
-        <input type="text" name="user_name" placeholder="Adınız" required />
-        <input type="email" name="user_email" placeholder="E-posta" required />
-        <textarea name="message" placeholder="Mesajınız" required />
-        <button type="submit">Gönder</button>
+        <input type="text" name="user_name" placeholder="name" required />
+        <input type="text" name="user_surname" placeholder="surname" required />
+        <input type="email" name="user_email" placeholder="e-mail" required />
+        <textarea name="message" placeholder="your message" required />
+        <button type="submit">send</button>
       </form>
     </section>
   );

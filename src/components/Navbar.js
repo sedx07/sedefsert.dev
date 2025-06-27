@@ -43,12 +43,12 @@ const Navbar = () => {
               href={`#${id}`}
               className={activeSection === id ? 'active' : ''}
             >
-              {id === 'home' && 'Ana Sayfa'}
-              {id === 'about' && 'Hakkımda'}
-              {id === 'projects' && 'Projeler'}
-              {id === 'experience' && 'Deneyim'}
-              {id === 'blog' && 'Blog'}
-              {id === 'contact' && 'İletişim'}
+              {id === 'home' && 'welcome'}
+              {id === 'about' && 'about me'}
+              {id === 'projects' && 'projects'}
+              {id === 'experience' && 'experiences'}
+              {id === 'blog' && 'blog'}
+              {id === 'contact' && 'contact me'}
             </a>
           </li>
         ))}
