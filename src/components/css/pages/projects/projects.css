@@ -36,4 +36,10 @@
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 

@@ -8,11 +8,18 @@ import Contact from './components/pages/contact';
 // import ScrollButtons from './components/scrollButoons';
 import Navbar from './components/Navbar';
 
+import useIsMobile from './hooks/useIsMobile';
+
+
+
 
 function App() {
+
+  const isMobile = useIsMobile();
+
   return (
     <div>
-      <Navbar />
+      <Navbar isMobile={isMobile} />
       <section id="home"><Home /></section>
       <section id="about"><About /></section>
       <section id="projects"><Projects /></section>

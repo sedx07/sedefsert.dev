@@ -2,15 +2,23 @@ import React, { useEffect, useState } from 'react';
 import './css/utilities.css';
 
 const sectionIds = ['home', 'about', 'projects', 'experience', 'blog', 'contact'];
+const sectionNames = {
+  home: 'welcome',
+  about: 'about me',
+  projects: 'projects',
+  experience: 'experiences',
+  blog: 'blog',
+  contact: 'contact me',
+};
 
-const Navbar = () => {
+const Navbar = ({ isMobile }) => {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.1, // %60 görünür olunca aktif say
+      threshold: 0.3,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -34,6 +42,16 @@ const Navbar = () => {
     };
   }, []);
 
+  // 👉 Mobil görünüm: sadece aktif başlığı göster
+  if (isMobile) {
+    return (
+      <div className="navbar-mobile-title">
+        {sectionNames[activeSection] || ''}
+      </div>
+    );
+  }
+
+  // 👉 Masaüstü görünüm: klasik navbar
   return (
     <nav className="navbar">
       <ul>
@@ -43,12 +61,7 @@ const Navbar = () => {
               href={`#${id}`}
               className={activeSection === id ? 'active' : ''}
             >
-              {id === 'home' && 'welcome'}
-              {id === 'about' && 'about me'}
-              {id === 'projects' && 'projects'}
-              {id === 'experience' && 'experiences'}
-              {id === 'blog' && 'blog'}
-              {id === 'contact' && 'contact me'}
+              {sectionNames[id]}
             </a>
           </li>
         ))}
