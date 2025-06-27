@@ -5,7 +5,7 @@ import Projects from './components/pages/projects';
 import Experience from './components/pages/experience';
 import Blog from './components/pages/blog';
 import Contact from './components/pages/contact';
-import ScrollButtons from './components/scrollButoons';
+// import ScrollButtons from './components/scrollButoons';
 import Navbar from './components/Navbar';
 
 
@@ -19,7 +19,6 @@ function App() {
       <section id="experience"><Experience /></section>
       <section id="blog"><Blog /></section>
       <section id="contact"><Contact /></section>
-      <ScrollButtons />
     </div>
 
     
