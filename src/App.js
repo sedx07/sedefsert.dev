@@ -1,23 +1,28 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
 import Home from './components/pages/home';
 import About from './components/pages/about';
 import Projects from './components/pages/projects';
 import Experience from './components/pages/experience';
 import Blog from './components/pages/blog';
 import Contact from './components/pages/contact';
+import ScrollButtons from './components/scrollButoons';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <div>
+      <Navbar />
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="projects"><Projects /></section>
+      <section id="experience"><Experience /></section>
+      <section id="blog"><Blog /></section>
+      <section id="contact"><Contact /></section>
+      <ScrollButtons />
+    </div>
+
+    
   );
 }
 

@@ -1,0 +1,79 @@
+/* Global sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ana yapı */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Tüm section'lar için tam ekran alan */
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Renk değişkenleri */
+:root {
+  --primary: #353535;
+  --background: #f9f9f9;
+  --text-primary: #333;
+}
+
+
+#root {
+  /* scroll-snap-type: y mandatory; */
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
+
+.scroll-buttons {
+  position: fixed;            /* Ekrana sabitlenmiş */
+  top: 50%;                   /* Dikeyde ortala */
+  right: 20px;                /* Sağ kenardan uzaklık */
+  transform: translateY(-50%);/* Tam dikey ortalama */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;              /* En üstte olsun */
+  pointer-events: auto;
+}
+
+.scroll-btn {
+  background-color: #797979;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* <-- önemli */
+}
+
+.scroll-btn svg {
+  font-size: 24px; /* ya da 28px */
+  margin: 0; /* ikonun ekstra boşluğu varsa sıfırla */
+}
+
+
+.scroll-btn:hover {
+  background-color: #ababab;
+}
+
+

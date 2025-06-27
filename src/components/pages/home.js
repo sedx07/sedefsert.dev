@@ -1,8 +1,14 @@
+import React from 'react';
+import '../css/pages/home/home.css';
+
 const Home = () => {
   return (
-    <div>
-      <h1>Anasayfa</h1>
-    </div>
+    <section className="home">
+      <div className="home__content">
+        {/* <h1>Merhaba, ben Sedef Sert</h1>
+        <p>Yazılım geliştirici, sistem geliştirici ve yapay zekâ tutkunu.</p> */}
+      </div>
+    </section>
   );
 };
 
