@@ -40,8 +40,7 @@ const Navbar = ({ isMobile }) => {
       });
     };
   }, []);
-
-  // 👉 Mobil görünüm: sadece aktif başlığı göster
+  
   if (isMobile) {
     return (
       <div className="navbar-mobile-title">

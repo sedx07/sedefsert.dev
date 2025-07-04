@@ -19,7 +19,6 @@ const blogs = [
 const Blog = () => {
   return (
     <section className="blog">
-      {/* <h2>blog</h2> */}
       <div className="blog-list">
         {blogs.map((post, index) => (
           <div key={index} className="blog-post">

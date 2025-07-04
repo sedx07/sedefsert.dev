@@ -8,21 +8,20 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_tvjamrc', 'template_r2flr06', form.current, 'EY0Y5ZP9Ib_0Lt6C8')
       .then(
         (result) => {
-          alert('succeses!');
+          alert('message sent!');
           form.current.reset();
         },
         (error) => {
-          alert('fail!');
+          alert('message fail! try again.');
         }
       );
   };
 
   return (
     <section className="contact">
-      {/* <h2>contact me</h2> */}
       <form ref={form} onSubmit={sendEmail}>
         <input type="text" name="user_name" placeholder="name" required />
         <input type="text" name="user_surname" placeholder="surname" required />

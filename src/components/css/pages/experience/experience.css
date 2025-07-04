@@ -2,6 +2,7 @@
   padding: 2rem;
   background-color: #36374B;
   color: var(--text-primary, #333);
+   scroll-snap-type: y mandatory;
 }
 
 .experience h2 {
@@ -20,7 +21,7 @@
 .experience-item {
   background-color: #f8f8f8;
   padding: 1.5rem;
-  border-left: 4px solid #6c63ff;
+  border-left: 4px solid #564dff;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -39,4 +40,21 @@
   font-size: 0.9rem;
   color: #999;
   margin: 0.3rem 0 1rem;
+}
+
+
+.experience-scroll-container {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 1rem; /* scroll çubuğu solundaki içerik rahatlasın diye */
+}
+
+/* Scrollbar stilini sadeleştirmek istersen: */
+.experience-scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.experience-scroll-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
 }
