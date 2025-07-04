@@ -4,7 +4,7 @@ import './css/utilities.css';
 const sectionIds = ['home', 'about', 'projects', 'experience', 'contact'];
 const sectionNames = {
   home: 'welcome',
-  about: 'about me',
+  about: 'about',
   projects: 'projects',
   experience: 'experiences',
   contact: 'contact me',
