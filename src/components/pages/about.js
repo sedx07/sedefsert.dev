@@ -4,19 +4,23 @@ import '../css/pages/about/about.css';
 const about = [
   {
     title: "Programming Languages",
-    description: "Python, JavaScript, C#, ABAP, SQL, SAP" 
+    description: "Python, JavaScript, C#, ABAP, SQL",
+    new: "Typescript, Java" 
   },
   {
     title: "Tools & Technologies",
-    description: "Power BI, .NET, Microsoft SQL Server, Django, React"
+    description: "Power BI, .NET, Microsoft SQL Server, Django, React, SAP",
+    new: ""
   },
   {
     title: "Version Control",
-    description: "GitHub, Bitbucket"
+    description: "GitHub, Bitbucket",
+    new: ""
   },
   {
     title: "Project Management",
-    description: "JIRA, Confluence"
+    description: "JIRA, Confluence, Notion",
+    new: ""
   }, 
 ];
 
@@ -30,6 +34,10 @@ const About = () => {
             <div className="about-row" key={index}>
               <strong className="about-title">{item.title}:</strong>
               <span className="about-desc">{item.description}</span>
+                {item.new && (<span className="about-new">
+                    <em>new: {item.new}</em>
+                               </span>
+              )}
             </div>
           ))}
         </div>
