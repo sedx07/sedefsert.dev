@@ -5,10 +5,14 @@ const Home = () => {
   return (
     <section className="home">
   <div className="home__content">
-    <h1>Welcome to my world</h1>
-    <p>Just me, turning ideas into code.</p>
+    <h1>Hello World!</h1>
+    <p>Turning ideas into code.</p>
     <p>
-      Hi, I’m Sedef — a Computer Engineering graduate with a strong background in data analysis and system development. I enjoy solving real-world problems through clean, efficient, and scalable solutions. Whether working solo or as part of a team, I’m always focused on learning, improving, and building things that make a difference.
+      Hi, I’m Sedef Sert — a Computer Engineering graduate and MSc candidate passionate about building impactful software solutions.
+I have hands-on experience in Python, JavaScript, C#, ABAP, SQL/T-SQL, Django, and React, and I enjoy turning ideas into working applications.
+
+Over the years, I’ve worked on projects ranging from AI-powered applications and automated workflows to integrated reporting platforms with Power BI.
+My goal is to keep improving my technical skills while contributing to projects that solve real-world problems.
     </p>
     {/* <a className="home__button" href="#contact">Contact Me</a> */}
   </div>

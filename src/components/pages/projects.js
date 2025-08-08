@@ -3,7 +3,7 @@ import '../css/pages/projects/projects.css';
 
 const projects = [
   {
-    status: 'coming soon!',
+    status: 'Status : in development',
     title: 'MySupplyMate',
     description:
       'mobile app that helps you track your pantry, fridge, and cleaning supplies. stay stocked, organized, and always prepared.',

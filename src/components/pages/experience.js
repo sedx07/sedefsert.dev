@@ -6,21 +6,38 @@ const experiences = [
     role: "System Development Specialist",
     company: "VESTEL",
     period: "Oct 2024 – Present",
-    description: "\n• Led data preparation and reporting processes using Power BI, transforming rawdata into actionable insights.\n• Designed and developed a web-based reporting system using Python (Django),React, and MSSQL, integrating Power BI for enhanced data visualization.\n• Managed version control with GitHub to ensure efficient collaboration across teams."
+    description: `
+• Developed a web-based application (Python/Django, React, MSSQL) integrated with Power BI, reducing manual reporting time by 40%.\n
+• Designed and implemented ETL processes, ensuring accurate data extraction, transformation, and loading, which improved reporting accuracy and efficiency.\n
+• Delivered actionable insights by transforming raw data into interactive dashboards and automated reports.\n
+• Streamlined version control workflows using GitHub, enhancing team collaboration and code quality.\n
+• Contributed to RFI & RFQ processes, led e-contract implementation, and performed detailed planning/scheduling analysis.\n
+• Designed and documented process flow diagrams using draw.io, improving project transparency and process optimization.\n
+`
   },
   {
     role: "Software Specialist Assistant",
     company: "Inci GS Yuasa",
     period: "Oct 2022 – Oct 2024",
-    description: "\n• Developed business reports using MSSQL, SAP-ABAP, and Power BI for data visualization.\n• Digitized manual processes with JavaScript to enhance operational efficiency.\n• Actively contributed to the SAP ECC to SAP HANA migration project.\n• Conducted Python training sessions for employees to enhance their technical skills.\n• Oversaw infrastructure setup for mobile application projects and managed Bitbucket for version control."
+    description: `
+• Built enterprise-scale business intelligence reports (MSSQL, T-SQL, SQL Server Agent, SAP-ABAP, Power BI), enabling data-driven decision-making across departments.\n
+• Automated key workflows and scheduled report generation using JavaScript, T-SQL, and SQL Server Agent, reducing manual processing time by 50%.\n
+• Conducted data analysis and system testing to support SAP ECC to SAP HANA migration, ensuring a smooth transition with minimal downtime.\n
+• Delivered Python training sessions to improve employees’ technical skills and promote internal knowledge sharing.\n
+• Managed Bitbucket repositories and coordinated version control for mobile application development projects.\n
+• Optimized ETL workflows to improve data extraction, transformation, and loading speed, enhancing overall reporting efficiency.\n
+`
   },
   {
     role: "Intern",
     company: "SISKON Industrial Software Automation",
     period: "Mar – Jun 2021",
-    description: "\n• Developed a Microsoft Teams ChatBot using Python to automate tasks, speeding up employee workflows.\n• Improved SQL skills by working with stored procedures and optimizing data management processes.\n• Gained hands-on experience with Docker and Git, while collaborating in a team environment."
+    description: `
+• Developed a Microsoft Teams ChatBot using Python to automate repetitive tasks, reducing time spent on manual work.\n
+• Improved database efficiency through SQL stored procedure optimization.\n
+• Gained hands-on experience with Docker and collaborative version control (Git).\n
+`
   }
- 
 ];
 
 const Experience = () => {

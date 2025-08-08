@@ -4,12 +4,17 @@ import '../css/pages/about/about.css';
 const about = [
   {
     title: "Programming Languages",
-    description: "Python, JavaScript, C#, ABAP, SQL",
-    new: "Typescript, Java" 
+    description: "Python, JavaScript, C#, ABAP, SQL, T-SQL",
+    new: ""
   },
   {
-    title: "Tools & Technologies",
-    description: "Power BI, .NET, Microsoft SQL Server, Django, React, SAP",
+    title: "Frameworks & Tools",
+    description: "Django, React, .NET, DevExpress, Docker, SQL Server Agent",
+    new: ""
+  },
+  {
+    title: "Data Visualization",
+    description: "Power BI, SAP Analytics",
     new: ""
   },
   {
@@ -19,10 +24,11 @@ const about = [
   },
   {
     title: "Project Management",
-    description: "JIRA, Confluence, Notion",
+    description: "JIRA, Confluence",
     new: ""
-  }, 
+  }
 ];
+
 
 const About = () => {
   return (
